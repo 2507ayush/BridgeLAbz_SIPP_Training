@@ -1,5 +1,6 @@
 public class NumberChecker {
 
+    // Method to check if a number is prime
     public static boolean isPrime(int number) {
         if (number <= 1) return false;
         for (int i = 2; i <= Math.sqrt(number); i++) {
@@ -8,6 +9,7 @@ public class NumberChecker {
         return true;
     }
 
+    // Method to check if a number is neon
     public static boolean isNeon(int number) {
         int square = number * number;
         int sum = 0;
@@ -18,6 +20,7 @@ public class NumberChecker {
         return sum == number;
     }
 
+    // Method to check if a number is spy
     public static boolean isSpy(int number) {
         int sum = 0;
         int product = 1;
@@ -31,6 +34,7 @@ public class NumberChecker {
         return sum == product;
     }
 
+    // Method to check if a number is automorphic
     public static boolean isAutomorphic(int number) {
         int square = number * number;
         String numStr = String.valueOf(number);
@@ -38,6 +42,7 @@ public class NumberChecker {
         return squareStr.endsWith(numStr);
     }
 
+    // Method to check if a number is buzz
     public static boolean isBuzz(int number) {
         return (number % 7 == 0) || (number % 10 == 7);
     }
