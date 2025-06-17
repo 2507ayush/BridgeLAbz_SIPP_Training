@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class MatrixManipulation {
 
+    // Method to create a random matrix with given rows and columns
     public static int[][] createRandomMatrix(int rows, int cols) {
         Random rand = new Random();
         int[][] matrix = new int[rows][cols];
@@ -14,6 +15,7 @@ public class MatrixManipulation {
         return matrix;
     }
 
+    // Method to add two matrices
     public static int[][] addMatrices(int[][] a, int[][] b) {
         int rows = a.length;
         int cols = a[0].length;
@@ -26,6 +28,7 @@ public class MatrixManipulation {
         return result;
     }
 
+    // Method to subtract two matrices
     public static int[][] subtractMatrices(int[][] a, int[][] b) {
         int rows = a.length;
         int cols = a[0].length;
@@ -38,6 +41,7 @@ public class MatrixManipulation {
         return result;
     }
 
+    // Method to multiply two matrices
     public static int[][] multiplyMatrices(int[][] a, int[][] b) {
         int rowsA = a.length;
         int colsA = a[0].length;
@@ -61,6 +65,7 @@ public class MatrixManipulation {
         return result;
     }
 
+    // Method to display a matrix
     public static void displayMatrix(int[][] matrix) {
         for (int[] row : matrix) {
             for (int val : row) {
